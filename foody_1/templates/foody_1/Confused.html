@@ -1,0 +1,88 @@
+
+
+{% extends "base.html" %}
+{% load static %}
+{% block headblock %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+
+<link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block fullscreen %}
+<h1 class='head_mansi'>Tell us about your mood</h1>
+<div class="Confused" style="background-image: url('img_girl.jpg');"
+<ul>
+  <li  class='link'><a href="{% url 'foody_1:happy' %}">Happie
+  </li>
+  <li class='link'><a href="{% url 'foody_1:angry' %}">Angrie
+  </li>
+  <li class='link'><a href="{% url 'foody_1:dehydrate' %}">Dehydratie
+  </li>
+  <li class='link'><a href="{% url 'foody_1:depress' %}">Depressie
+  </li>
+  <li class='link'><a href="{% url 'foody_1:excite' %}">Excitie
+  </li>
+  <li class='link'><a href="{% url 'foody_1:unwell' %}">Unwellie
+  </li>
+  <li class='link'><a href='#'>Most Searchie
+  </li>
+  <li class='link'><a href='#'>Most ordered at this time of the dayie
+  </li>
+  <li class='link'><a href='#'>Delivered instantlie
+  </li>
+</ul>
+
+<style media="screen">
+.link{
+  text-align: center;
+    display: block;
+  font-size: 30px;
+font-family: 'Poor Story', cursive;
+}
+.under_tag{
+  color:black;
+  font-size: 25px;
+  font-family: 'Poor Story', cursive;
+}
+.head_mansi{
+
+  color:black;
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Poor Story', cursive;
+}
+</style>
+<br></br>
+<br></br>
+
+<div class="container" align="center" >
+    <div class="spinner-grow text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-secondary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-success" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-danger" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-warning" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-info" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-light" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-dark" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+</div>
+{% endblock %}

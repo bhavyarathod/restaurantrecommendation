@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+{% block headblock %}
+  <!-- <link rel="stylesheet" href="{% static 'simplesocial/css/instr.css' %}"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'simplesocial/css/image.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+{% endblock %}
+
+{% block fullscreen %}
+<div class="container">
+      <h2 align='center' class='confused' >Cuisines</h2>
+      <div class="row">
+<!--        <div class="col-lg-4 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:northindian' %}"><img src="https://scontent.famd1-1.fna.fbcdn.net/v/t1.0-9/159420093_101909188648254_1191988205820394515_o.jpg?_nc_cat=103&ccb=1-3&_nc_sid=730e14&_nc_ohc=yDS1-dBwGkkAX8AR3q-&_nc_ht=scontent.famd1-1.fna&oh=85653553056f91d1b2a454aa0e7d505e&oe=606E28EF" alt="">North Indian</div>-->
+        <div class="col-lg-6 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:northindian' %}"><img src="https://source.unsplash.com/1590x1055/?indianfood,rajma" alt="">North Indian</div>
+          <div class="col-lg-6 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:southindian' %}"><img  src="https://scontent.famd1-1.fna.fbcdn.net/v/t1.0-0/p600x600/159883823_101909111981595_6735400201534669763_o.jpg?_nc_cat=102&ccb=1-3&_nc_sid=730e14&_nc_ohc=lXlp-sEaJK0AX-n6Atd&_nc_ht=scontent.famd1-1.fna&tp=6&oh=292ab203fcbc78044b6ff129e19ed5e7&oe=606F667B" alt="">South Indian</div>
+<!--                <div class="col-lg-4 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:northindian' %}"><img src="https://source.unsplash.com/1400x900/?chineesefood" alt="">South indian</div>-->
+
+          <div class="col-lg-6 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:italian' %}"><img src="https://images.squaremeal.co.uk/cloud/article/9819/images/the-best-italian-restaurants-in-london-gloria_06102020124732.jpg?w=1000" alt="">Italian</div>
+        <div class="col-lg-6 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:chinese' %}"><img src="https://scontent.famd1-3.fna.fbcdn.net/v/t1.0-9/159867375_101909125314927_92573077695803014_o.jpg?_nc_cat=100&ccb=1-3&_nc_sid=730e14&_nc_ohc=su9oHl60GJoAX_r8_hy&_nc_ht=scontent.famd1-3.fna&oh=208cd288d39c1aaa09ee1d06b2cb9020&oe=606F67BE" alt="">Chinese</div>
+
+<!--          <div class="col-lg-4 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:confused' %}"><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjaJTI9jykkJxkq5p-NCu3o_h2gXHwrrQlp6yCXSMbv5YYRZUx" alt="">Feeling MOODIE? Can't decide what to eat? We can help! :D</div>-->
+                  <div class="col-lg-6 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:confused' %}"><img  src="https://source.unsplash.com/1590x1055/?headache" alt="">Feeling MOODIE? Can't decide what to eat? We can help! :D</div>
+
+
+            <div class="col-lg-6 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:continental' %}"><img  src="https://scontent.famd1-3.fna.fbcdn.net/v/t1.0-9/159479138_101909161981590_2249094949588072178_o.jpg?_nc_cat=106&ccb=1-3&_nc_sid=730e14&_nc_ohc=yKVzm2P5IScAX8eYJ5m&_nc_ht=scontent.famd1-3.fna&oh=0cd7c48259ee6928f3dd06a98790ebb7&oe=606EB42E" alt="">Continental</div>
+        <div class="col-lg-6 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:fastfood' %}"><img  src="https://c4.wallpaperflare.com/wallpaper/397/728/966/burger-4k-downloading-for-pc-wallpaper-preview.jpg" alt="">Fast Food</div>
+        <div class="col-lg-6 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:bev' %}"><img  src="https://images.pexels.com/photos/452737/pexels-photo-452737.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">Beverages</div>
+<!--        <div class="col-lg-4 col-xs-6 thumbnail hello" ><a href="{% url 'foody_1:des' %}"><img src="https://scontent.famd1-2.fna.fbcdn.net/v/t1.0-9/159869467_101909178648255_6070378903737929807_o.jpg?_nc_cat=101&ccb=1-3&_nc_sid=730e14&_nc_ohc=HsOq4yOjJTUAX9K5Amb&_nc_ht=scontent.famd1-2.fna&oh=eca08a89b2559ca4ac620a7755226a71&oe=606EB906" height="50%" width="350px" alt="">Desserts</div>-->
+          <div class="col-lg-6 col-xs-6 thumbnail hello"><a href="{% url 'foody_1:northindian' %}"><img src="https://source.unsplash.com/1590x1055/?icecream,brownie" alt="">Dessert</div>
+
+      </div>
+
+    </div>
+
+<style media="screen">
+  .hello{
+    font-size: 20px;
+    text-align: center;
+      display:block;
+      height: 310px;
+      width: 390px;
+      margin: auto;
+  }
+ .container{
+<!--   margin-left: 200px;-->
+<!--   height:30px;-->
+
+ }
+  .confused{
+    font-size: 90px;
+    text-align: center;
+    font-family: 'Poor Story', cursive;
+  }
+  .row{
+    height:100px;
+
+   }
+</style>
+
+{% endblock %}

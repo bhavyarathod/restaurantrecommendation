@@ -1,0 +1,96 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block headblock %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+{% endblock %}
+
+{% block fullscreen %}
+<h1 class='head_mansi'>UNWELLIE MOOD</h1>
+<div align="center">
+    <img src="https://scontent.fbom26-1.fna.fbcdn.net/v/t1.0-9/159619124_102201975285642_2036983037666404316_o.jpg?_nc_cat=101&ccb=1-3&_nc_sid=730e14&_nc_ohc=0cgOa2mYtIQAX8HFC58&_nc_oc=AQnG5vsOQXt6w3UrFolE8OVjJNeRvUSX1sQz3vmBIpzCvXwuPN90QZ_EICg_55CNyAWZPgAKIKR87ATT45w1UAYp&_nc_ht=scontent.fbom26-1.fna&oh=b3ed09f85460a7805e37197d1d64fe84&oe=60716E87">
+</div>
+
+<ul>
+    {%for x in result%}
+    {% if x == 'CholleBature' %}
+    <a href="{% url 'foody_1:cholle' %}">Cholle Bhature</a><br>
+    {% endif %}
+    {% if x == 'GarlicBread' %}
+    <a href="{% url 'foody_1:garlic' %}">Garlic Bread</a><br>
+    {% endif %}
+    {% if x == 'Pasta' %}
+    <a href="{% url 'foody_1:pasta' %}">Pasta</a><br>
+    {% endif %}
+    {% if x == 'Dosa' %}
+    <a href="{% url 'foody_1:dosa' %}">Dosa</a><br>
+    {% endif %}
+    {% if x == 'Idli' %}
+    <a href="{% url 'foody_1:idli' %}">Idli</a><br>
+    {% endif %}
+    {% if x == 'RajmaChawal' %}
+    <a href="{% url 'foody_1:rajma' %}">Rajma Chawal</a><br>
+    {% endif %}
+    {% if x == 'AalooTikki' %}
+    <a href="{% url 'foody_1:aalootikki' %}">Aaloo Tikki<a><br>
+    {% endif %}
+    {% if x == 'VadaPao' %}
+    <a href="{% url 'foody_1:vadapao' %}">Vada Pao</a><br>
+    {% endif %}
+    {% if x == 'IceCream' %}
+    <a href="{% url 'foody_1:icecream' %}">Ice Cream</a><br>
+    {% endif %}
+    {% if x == 'Pastries' %}
+    <a href="{% url 'foody_1:pastries' %}">Pastries</a><br>
+    {% endif %}
+    {% if x == 'Chocolates' %}
+    <a href="{% url 'foody_1:chocolates' %}">Chocolates</a><br>
+    {% endif %}
+    {% if x == 'Ham' %}
+    <a href="{% url 'foody_1:ham' %}">Ham</a><br>
+    {% endif %}
+    {% if x == 'SpringRoll' %}
+    <a href="{% url 'foody_1:springroll' %}">Spring Roll</a><br>
+    {% endif %}
+    {% if x == 'Noodles' %}
+    <a href="{% url 'foody_1:noodles' %}">Noodles</a><br>
+    {% endif %}
+    {% if x == 'chillyPaneer' %}
+    <a href="{% url 'foody_1:chillyPaneer' %}">Chilly Paneer</a><br>
+    {% endif %}
+    {% if x == 'Tea' %}
+    <a href="{% url 'foody_1:tea' %}">Tea</a><br>
+    {% endif %}
+    {% if x == 'SoftDrinks' %}
+    <a href="{% url 'foody_1:softdrinks' %}">Soft Drinks</a><br>
+    {% endif %}
+    {% if x == 'Juices' %}
+    <a href="{% url 'foody_1:juices' %}">Juices</a><br>
+    {% endif %}
+    {%endfor%}
+</ul>
+
+
+<style media="screen">
+a{
+  text-align: center;
+    display: block;
+  font-size: 30px;
+font-family: 'Poor Story', cursive;
+}
+.under_tag{
+  color:black;
+  font-size: 25px;
+  font-family: 'Poor Story', cursive;
+}
+.head_mansi{
+
+  color:black;
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Poor Story', cursive;
+}
+</style>
+{% endblock %}
